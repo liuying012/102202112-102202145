@@ -1,0 +1,100 @@
+/* 页面基础样式 */
+.page {
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+/* 顶部图片样式 */
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20rpx;
+}
+
+.top-image {
+  width: 750rpx;
+  height: 550rpx;
+  object-fit: cover;
+}
+
+/* 搜索框样式 */
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  background-color: #ffffff;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.search-input {
+  width: 70%;
+  padding: 10rpx;
+  border: 1px solid #ccc;
+  border-radius: 5rpx;
+}
+
+.search-btn {
+  width: 25%;
+  background-color: #407ab1c7;
+  color: white;
+  padding: 10rpx;
+  border-radius: 5rpx;
+  border: none;
+}
+
+/* 导航框样式 */
+.navigation-bar {
+  padding: 20rpx;
+  background-color: #ffbfda;
+  text-align: center;
+  color: white;
+  margin-bottom: 20rpx;
+}
+
+.navigation-title {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+/* 推荐项目列表样式 */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;  /* 自动换行 */
+  justify-content: space-between;
+  padding: 20rpx;
+}
+
+.project-item {
+  width: 44%;  /* 每行两个，适应屏幕宽度 */
+  margin-bottom: 20rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20rpx;
+  text-align: center; /* 居中文字 */
+}
+
+.project-image {
+  width: 100%;
+  height: 200rpx;
+  border-radius: 10rpx;
+  object-fit: cover;
+}
+
+.project-info {
+  margin-top: 10rpx;
+}
+
+.project-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-top: 10rpx;
+}
+
+.project-description {
+  font-size: 20rpx;
+  color: #666;
+  margin-top: 5rpx;
+}

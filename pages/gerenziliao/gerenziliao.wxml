@@ -1,0 +1,28 @@
+<view class="container">
+   <!-- 左侧列表 -->
+   <view class="left-column">
+     <view class="list-item" bindtap="chooseAvatar" style="position: relative; left: 116rpx; top: 41rpx">修改头像</view>
+     <view class="list-item" bindtap="editNickname" style="position: relative; left: 116rpx; top: 41rpx">修改昵称</view>
+     <view class="list-item" bindtap="editGender" style="width: 179rpx; display: block; box-sizing: border-box; position: relative; left: 116rpx; top: 41rpx">设置性别</view>
+     <view class="list-item" style="position: relative; left: 116rpx; top: 41rpx">电话号码</view>
+     <view class="list-item" style="position: relative; left: 116rpx; top: 41rpx">我的技能树</view>
+   </view>
+   <!-- 右侧内容 -->
+   <view class="right-column" style="position: relative; left: -62rpx; top: 0rpx">
+     <!-- 个人信息部分 -->
+  <view class="info-section">
+    <!-- 头像 -->
+    <image class="avatar" src="/images/touxiang.png" mode="aspectFit" style="width: 133rpx; height: 97rpx; display: inline-block; box-sizing: border-box; position: relative; left: 260rpx; top: 8rpx"></image>
+    <!-- 个人信息 -->
+    <!-- 添加点击事件到jinengshu.png图片 -->
+<image src="/pages/gerenziliao/images/jinengshu.png" mode="aspectFit" style="height: 72rpx; display: inline-block; box-sizing: border-box; width: 133rpx; position: relative; left: 102rpx; top: 343rpx" bindtap="goTojinengshu"></image>
+
+    <image class="avatar" src="/pages/gerenziliao/images/baocun.png" style="width: 654rpx; height: 97rpx; display: inline-block; box-sizing: border-box; position: relative; left: -135rpx; top: 1118rpx"></image>
+   </view>
+   <view class="personal-info">
+      <text style="width: 566rpx; display: inline; box-sizing: content-box; position: relative; left: 266rpx; top: -74rpx">宋威龙\n</text>
+      <text style="position: relative; left: 266rpx; top: -20rpx">男生\n</text>
+      <text style="position: relative; left: 266rpx; top: 20rpx">182****0894</text>
+    </view>
+  </view>
+</view>

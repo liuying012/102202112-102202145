@@ -1,0 +1,71 @@
+.container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 100vh; /* 确保容器足够高 */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* 设置为100%以占满父元素 */
+  background-image: url('/images/background.jpg'); /* 确保路径正确 */
+  background-size: cover; /* 填满整个容器 */
+  background-position: center; /* 中心对齐 */
+  z-index: -1; /* 确保其他内容在前面 */
+}
+
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+  position: relative;
+  z-index: 1;
+}
+
+.title-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: white; /* 按钮背景颜色改为白色 */
+  color: black; /* 文字颜色改为黑色 */
+  border-radius: 5px; /* 边角圆滑 */
+  font-size: 16px; /* 文字大小 */
+}
+
+.tutor-images {
+  position: relative; /* 添加相对定位 */
+  z-index: 2; /* 确保图片在最上层 */
+}
+
+.tutor-image-item {
+  width: 100%; /* 图片宽度填满容器 */
+  height: auto; /* 高度自动调整 */
+  position: relative; /* 设置相对定位 */
+  margin-bottom: 20px; /* 图片之间的间距 */
+}
+
+.tutor-image {
+  width: 100%; /* 图片宽度填满容器 */
+  height: auto; /* 高度自动调整 */
+  object-fit: cover; /* 保持图片比例，填满容器 */
+  border-radius: 10px; /* 图片圆角 */
+}
+
+.rounded-rectangle {
+  width: 100%; /* 宽度填满容器 */
+  height: 120px; /* 高度高于两个按钮，根据实际按钮高度调整 */
+  background-color: white; /* 白色背景 */
+  border-radius: 20px; /* 四角圆滑 */
+  margin-top: -50px; /* 使矩形位于按钮上方 */
+  position: relative; /* 相对定位 */
+  z-index: 0; /* 确保矩形在背景和按钮之间 */
+}
+
+.bold-text {
+  font-weight: bold; /* 加粗文字 */
+}

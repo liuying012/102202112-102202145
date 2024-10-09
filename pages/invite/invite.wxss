@@ -1,0 +1,102 @@
+/* 容器 */
+.container {
+  padding: 20rpx;
+  background-color: #f8f8f8;
+}
+
+/* 应用名称样式 */
+.app-name {
+  font-size: 32rpx;
+  text-align: center;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+}
+
+/* 背景区域 */
+.background {
+  position: relative;
+  width: 100%;
+  height: 200rpx; /* 调整适合的高度 */
+}
+
+/* 显微镜与电脑图标 */
+.microscope, .computer {
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx;
+  object-fit: cover;
+}
+
+/* 显微镜放置左侧 */
+.microscope {
+  left: 20rpx;
+  top: 50rpx;
+}
+
+/* 电脑放置右侧 */
+.computer {
+  right: 20rpx;
+  top: 50rpx;
+}
+
+/* 项目介绍区域 */
+.project-info {
+  margin-top: 20rpx;
+}
+
+/* 项目标签 */
+.project-label {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+/* 子标签 */
+.sub-label {
+  font-size: 24rpx;
+  color: #666;
+}
+
+/* 项目详细信息 */
+.project-details {
+  margin-top: 10rpx;
+}
+
+.project-name, .required-people, .project-description, .project-share {
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}
+
+/* 用户信息区域 */
+.user-info {
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+/* 用户头像 */
+.user-avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+
+/* 用户名 */
+.username {
+  font-size: 24rpx;
+  font-weight: bold;
+}
+
+/* 社交网络图标 */
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 300rpx;
+  margin-top: 10rpx;
+}
+
+.icon {
+  width: 30rpx;
+  height: 30rpx;
+  object-fit: cover;
+}

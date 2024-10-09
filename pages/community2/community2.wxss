@@ -1,0 +1,134 @@
+.container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 100vh; /* 确保容器足够高 */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* 设置为100%以占满父元素 */
+  background-image: url('/images/background.jpg'); /* 确保路径正确 */
+  background-size: cover; /* 填满整个容器 */
+  background-position: center; /* 中心对齐 */
+  z-index: -1; /* 确保其他内容在前面 */
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  position: relative;
+  z-index: 1;
+}
+
+.title-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: white; /* 按钮背景颜色改为白色 */
+  color: black; /* 文字颜色改为黑色 */
+  border-radius: 5px; /* 边角圆滑 */
+  font-size: 16px; /* 文字大小 */
+}
+
+.rounded-rectangle {
+  width: 100%; /* 宽度填满容器 */
+  height: 120px; /* 高度高于两个按钮，根据实际按钮高度调整 */
+  background-color: white; /* 白色背景 */
+  border-radius: 20px; /* 四角圆滑 */
+  margin-top: -50px; /* 使矩形位于按钮上方 */
+  position: relative; /* 相对定位 */
+  z-index: 0; /* 确保矩形在背景和按钮之间 */
+}
+
+.skill-bridge-container {
+  display: flex; /* 使用flex布局 */
+  flex-direction: column; /* 垂直排列子元素 */
+  align-items: flex-start; /* 子元素靠左对齐 */
+  margin-top: 30px; /* 根据需要调整间距 */
+}
+
+.avatar-circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 子元素居中对齐 */
+  margin-bottom: 50rpx; /* 根据需要调整间距 */
+}
+
+.avatar-circle {
+  width: 150rpx; /* 圆圈的宽度 */
+  height: 150rpx; /* 圆圈的高度 */
+  border-radius: 50%; /* 圆形 */
+  border: 2px solid transparent; /* 黑色边框 */
+  margin-bottom: 50rpx; /* 圆圈之间的间距 */
+  position: relative; /* 设置相对定位，用于图片绝对定位 */
+  overflow: hidden; /* 隐藏超出部分 */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 子元素居中对齐 */
+  justify-content: center; /* 子元素垂直居中 */
+}
+
+.avatar-image {
+  width: 100%; /* 图片宽度填满容器 */
+  height: 100%; /* 图片高度填满容器 */
+  object-fit: cover; /* 保持图片比例，填满容器 */
+  position: absolute; /* 绝对定位 */
+  top: 0; /* 顶部对齐 */
+  left: 0; /* 左侧对齐 */
+}
+
+.avatar-circle::after {
+  content: ""; /* 伪元素内容为空 */
+  position: absolute; /* 绝对定位 */
+  top: 50%; /* 垂直居中 */
+  left: 100%; /* 从圆圈右侧开始 */
+  transform: translateY(-50%); /* 垂直居中调整 */
+  width: 100%; /* 覆盖整个圆圈宽度 */
+  height: 2px; /* 虚线的高度 */
+  background-color: black; /* 黑色背景 */
+  border-radius: 1px; /* 轻微圆角，使虚线看起来更自然 */
+  border: 1px dashed black; /* 黑色虚线 */
+  transform-origin: left; /* 从左侧开始变换 */
+  z-index: 4; 
+}
+
+.student-info {
+  font-weight: bold; /* 加粗文本 */
+  margin-top: 10px; /* 根据需要调整间距 */
+  position: absolute; /* 绝对定位 */
+  left: -280rpx; /* 根据实际布局调整位置 */
+  top: 50%; /* 垂直居中 */
+  transform: translateY(-50%); /* 垂直居中调整 */
+  white-space: nowrap; /* 防止文本换行 */
+  z-index: 4; 
+}
+
+/* 新增样式 */
+.student-info {
+  font-weight: bold; /* 加粗文本 */
+  margin-top: 10px; /* 根据需要调整间距 */
+  position: absolute; /* 绝对定位 */
+  left: 180rpx; /* 根据实际布局调整位置 */
+  top: 50%; /* 垂直居中 */
+  transform: translateY(-50%); /* 垂直居中调整 */
+  white-space: nowrap; /* 防止文本换行 */
+  z-index: 4; 
+}
+
+.chat-button {
+  position: absolute; /* 绝对定位 */
+  right: 0; /* 将按钮放置在容器的最右侧 */
+  top: 50%; /* 垂直居中 */
+  transform: translateY(-50%); /* 垂直居中调整 */
+  background-color: transparent; /* 设置按钮背景为白色 */
+  color: transparent; /* 文字颜色改为黑色 */
+  border-radius: 15rpx; /* 按钮边角圆滑 */
+  padding: 5rpx 10rpx; /* 按钮内边距 */
+  z-index: 1; /* 确保按钮在最上层 */
+}

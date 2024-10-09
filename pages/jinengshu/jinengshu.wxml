@@ -1,0 +1,12 @@
+<view class="container">
+  <!-- 页面顶部欢迎文字 -->
+  <view class="welcome-text" style="position: relative; left: 37rpx; top: -4rpx">欢迎来到你的技能树</view>
+  
+  <!-- 技能树展示 -->
+  <image class="avatar" src="/pages/jinengshu/images/jinengshu.png" style="position: relative; left: 0rpx; top: 23rpx; width: 668rpx; height: 577rpx; display: block; box-sizing: border-box"></image>
+  <image class="avatar" src="/pages/jinengshu/images/smile.png" style="width: 124rpx; height: 124rpx; display: block; box-sizing: border-box; position: relative; left: -237rpx; top: -706rpx"></image>
+ 
+  
+  <!-- 页面底部修改按钮 -->
+  <image class="avatar" src="/pages/jinengshu/images/xiugai.png" style="width: 124rpx; height: 210rpx; display: block; box-sizing: border-box; position: relative; left: 273rpx; top: -31rpx"></image>
+</view>

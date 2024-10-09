@@ -1,0 +1,65 @@
+<view class="container">
+  <!-- 顶部区域 -->
+
+  <!-- 中部区域：背景图片和标题 -->
+  <view class="background-area" style="height: 256rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx; width: 750rpx">
+    <image class="project-image" src="https://xh-1330255155.cos.ap-guangzhou.myqcloud.com/2.jpg" style="width: 747rpx; display: inline-block; box-sizing: border-box; height: 258rpx"></image>
+  </view>
+
+  <!-- 底部标签 -->
+  <view class="bottom-bar">
+    <view class="tab">项目</view>
+    <view class="tab">文件</view>
+    <view class="tab">     </view>
+  </view>
+
+  <!-- 发起邀请按钮 -->
+  <view class="container" style="height: 79rpx; display: flex; box-sizing: border-box; width: 750rpx">
+    <button class="invite-button" bindtap="goToInvitePage" style="position: relative; left: 269rpx; top: -79rpx; width: 214rpx; height: 81rpx; display: block; box-sizing: border-box">发起邀请</button>
+  </view>
+
+  <!-- 用户评论区域 -->
+  <view class="comments-section">
+    <!-- 用户评论1 -->
+    <view class="comment" style="height: 308rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: -95rpx">
+      <!-- 用户头像 -->
+      <image class="user-avatar" src="https://xh-1330255155.cos.ap-guangzhou.myqcloud.com/11.jpg" style="width: 95rpx; height: 93rpx; border-radius: 50%; margin-right: 10rpx; display: inline-block; box-sizing: border-box" />
+
+      <!-- 用户名和评论内容 -->
+      <view class="comment-content">
+        <text class="username">宋威龙</text>
+        <text class="comment-text"> 我们正在深入研究和改进深度学习算法，如卷积神经网络（CNNs）、循环神经网络（RNNs）、生成对抗网络（GANs），以实现更高效的模型。</text>
+      </view>
+
+      <!-- 评论互动数据 -->
+      <view class="interaction-data">
+        <text class="date">2021-12-21</text>
+        <text class="likes">点赞 206</text>
+        <text class="comments">评论 0</text>
+        <text class="favorites">收藏 20k</text>
+        <text class="shares">分享 534</text>
+      </view>
+    </view>
+
+    <!-- 用户评论2 -->
+    <view class="comment" style="position: relative; left: 0rpx; top: -104rpx">
+      <!-- 用户头像 -->
+      <image class="user-avatar" src="https://xh-1330255155.cos.ap-guangzhou.myqcloud.com/12.jpg" style="width: 95rpx; height: 77rpx; border-radius: 50%; margin-right: 10rpx; display: inline-block; box-sizing: border-box" />
+
+      <!-- 用户名和评论内容 -->
+      <view class="comment-content">
+        <text class="username">吴彦祖</text>
+        <text class="comment-text">  在机器视觉方面，我们专注于图像识别。</text>
+      </view>
+
+      <!-- 评论互动数据 -->
+      <view class="interaction-data">
+        <text class="date">2021-12-21</text>
+        <text class="likes">点赞 150</text>
+        <text class="comments">评论 5</text>
+        <text class="favorites">收藏 12k</text>
+        <text class="shares">分享 300</text>
+      </view>
+    </view>
+  </view>
+</view> 

@@ -1,0 +1,39 @@
+/* pages/self/self.wxss */
+image {
+  width: 100%; /* 或者你想要的固定宽度 */
+  height: auto; /* 或者你想要的固定高度 */
+  margin-bottom: 10px; /* 图片之间的间隔 */
+}
+
+/* pages/self/self.wxss */
+.avatar-section {
+  display: flex;
+  align-items: center; /* 垂直居中对齐 */
+}
+
+.avatar-section image {
+  width: 50px; /* 假设头像宽度为50px */
+  height: 50px; /* 假设头像高度为50px */
+  margin-right: 10px; /* 图片和文本之间的间距 */
+}
+
+.bold-text {
+  font-weight: bold; /* 加粗 */
+}
+
+/* pages/self/self.wxss */
+.info-text {
+  display: block; /* 使文本独占一行 */
+  margin-top: 10rpx; /* 文字与图片之间的间距 */
+  text-align: center; /* 文字居中显示 */
+  font-size: 50rpx; /* 增大字体大小 */
+  font-weight: bold; /* 加粗字体 */
+}
+
+.exit-btn {
+  background-color: #4b8ace; /* 蓝色背景 */
+  color: white; /* 白色文字 */
+  border-radius: 20rpx; /* 圆角边框 */
+  padding: 10rpx 20rpx; /* 内边距 */
+  margin-top: 20rpx; /* 与上方内容的间距 */
+}

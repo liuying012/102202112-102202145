@@ -1,0 +1,194 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contact-info {
+  background-color: white;
+  padding: 10px;
+}
+
+.contact-name {
+  font-weight: bold;
+}
+
+.contact-position {
+  color: white;
+}
+
+.chat-content {
+  flex: 1;
+  background-color: white;
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.input-area {
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  background-color: white;
+  padding: 10px;
+}
+
+.chat-icon {
+  width: 40px; /* 根据实际图片大小调整 */
+  height: 40px; /* 根据实际图片大小调整 */
+  margin-right: 10px; /* 图片与输入框之间的间距 */
+}
+
+.input-box {
+  flex: 1;
+  border: 1px solid black;
+  padding: 5px;
+  margin-right: 10px; /* 输入框与发送按钮之间的间距 */
+}
+
+.send-btn {
+  background-color: pink;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
+.input-box {
+  flex: 1;
+  border: none;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.send-btn {
+  background-color: pink;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+}
+
+.input-box {
+  flex: 1;
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+.input-field {
+  flex: 1;
+  border: none;
+  padding: 5px;
+  margin-right: 10px;
+  height: 40px; /* 输入框高度 */
+  background-color: white; /* 背景颜色 */
+}
+
+.send-btn {
+  background-color: pink;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.input-field {
+  flex: 1;
+  border: 1px solid white;
+  padding: 5px;
+  margin-right: 10px;
+  height: 40px; /* 输入框高度 */
+  background-color: white; /* 背景颜色 */
+  border-radius: 4px; /* 输入框圆角 */
+  /* 减小输入框长度 */
+  width: 100px; /* 根据需要调整宽度 */
+}
+
+.send-btn {
+  background-color: pink;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px; /* 按钮圆角 */
+  /* 文字居中 */
+  line-height: 20px; /* 与按钮高度相同 */
+}
+
+.title-area {
+  display: flex;
+  flex-direction: column; /* 使子元素垂直排列 */
+  align-items: center; /* 子元素居中 */
+  padding: 10px;
+  background-color: white; /* 可以根据需要调整背景色 */
+}
+
+.title-line {
+  text-align: center; /* 文字居中 */
+}
+
+.title-text {
+  font-weight: bold; /* 标题加粗 */
+  font-size: 18px; /* 根据需要调整字体大小 */
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.chat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.message-sender {
+  align-items: flex-end;
+}
+
+.message-receiver {
+  align-items: flex-start;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.message .text {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+}
+
+.message-sender .text {
+  background-color: white;
+  border-bottom-right-radius: 0;
+}
+
+.message-receiver .text {
+  background-color: white;
+  border-bottom-left-radius: 0;
+}

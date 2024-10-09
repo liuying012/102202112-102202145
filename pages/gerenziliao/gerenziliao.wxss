@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+}
+
+.left-column {
+  width: 150px; /* 可根据需要调整宽度 */
+  padding: 10px;
+  border-right: 1px solid #ccc; /* 添加边框以区分左右列 */
+}
+
+.list-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee; /* 添加底部边框以区分列表项 */
+}
+
+.right-column {
+  flex: 1;
+  padding: 10px;
+}

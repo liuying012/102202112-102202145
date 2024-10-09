@@ -1,0 +1,23 @@
+<view class="container">
+    <!-- 页面顶部图片 -->
+    <view class="image-container">
+        <image class="top-image" src="/images/background.jpg" style="width: 750rpx; height: 550rpx; display: inline-block; box-sizing: content-box"></image>
+    </view>
+    <!-- 四角圆滑的矩形 -->
+    <view class="rounded-rectangle" style="width: 750rpx; height: 500rpx; display: block; box-sizing: content-box; left: 0rpx; top: 0rpx"></view>
+    
+      <!-- 导师大赏和技能桥梁并排显示 -->
+      <view class="title-container" style="position: relative; left: 0rpx; top: -443rpx">
+        
+         <view class="title-button" bindtap="onTutorTitleTap">导师大赏</view>
+         <view class="title-button" bindtap="onBridgeTitleTap">技能桥梁</view>
+     </view>
+      <!-- 导师大赏图片展示区域 -->
+     <view class="tutor-images">
+        <!-- 循环显示四张图片 -->
+        <view class="tutor-image-item" wx:for="{{tutors}}" wx:key="index">
+             <image class="tutor-images" src="/pages/community/images/{{item.image}}.jpg" style="position: relative; left: 0rpx; top: -424rpx" bindtap="onImageTap"></image>
+         </view>
+     </view>
+     
+</view>

@@ -1,0 +1,52 @@
+<view class="container">
+  <!-- 返回按钮 -->
+  <button class="back-button" bindtap="goBack" style="position: relative; left: -295rpx; top: 0rpx">返回</button>
+
+  <!-- 标题区域 -->
+  <view class="title">发起项目</view>
+
+  <!-- 输入框区域 -->
+  <view class="input-area">
+    <!-- 项目名称 -->
+    <view class="input-label">项目名称</view>
+    <input class="input-box" placeholder="请输入项目名称" />
+
+    <!-- 简介 -->
+    <view class="input-label">简介</view>
+    <textarea class="input-box" placeholder="请输入项目简介"></textarea>
+
+    <!-- 项目模型 -->
+    <view class="input-label">项目模型</view>
+    <input class="input-box" placeholder="请输入项目模型" />
+
+    <!-- 项目亮点 -->
+    <view class="input-label">项目亮点</view>
+    <textarea class="input-box" placeholder="请输入项目亮点"></textarea>
+
+    <!-- 项目介绍 -->
+    <view class="input-label">项目介绍</view>
+    <textarea class="input-box" placeholder="请输入项目介绍"></textarea>
+
+    <!-- 项目类型 -->
+    <view class="input-label">项目类型</view>
+    <input class="input-box" value="大模型 项目" disabled />
+
+    <!-- 添加成员 -->
+    <view class="input-label">添加成员</view>
+    <input class="input-box" value="0/50" disabled />
+
+    <!-- 辅助功能 -->
+    <view class="input-label">辅助功能</view>
+    <input class="input-box" value="导师加入、ai辅助" disabled />
+  </view>
+
+  <!-- 提交按钮 -->
+  <button class="submit-button" bindtap="submitProject">发起项目</button>
+
+  <!-- 发布成功弹窗 -->
+  <view wx:if="{{showSuccessModal}}" class="modal" bindtap="tapModalToClose">
+    <view class="modal-content">
+      <text>发布成功！</text>
+    </view>
+  </view>
+</view>

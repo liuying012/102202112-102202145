@@ -1,0 +1,15 @@
+<!-- pages/projectdetails/projectdetails.wxml -->
+<view class="container">
+    <!-- 背景图片 -->
+    <image class="background-image" src="/pages/projectdetails/images/background.jpg" mode="aspectFit" style="position: relative; left: -88rpx; top: 697rpx; width: 887rpx; height: 699rpx; display: inline-block; box-sizing: border-box"></image>
+    <!-- 实验室设备图片 -->
+    <image class="equipment-image" src="/pages/projectdetails/images/1.jpg" mode="aspectFit" style="position: relative; left: -47rpx; top: -645rpx; width: 281rpx; height: 120rpx; display: inline-block; box-sizing: border-box"></image>
+    <!-- 实验室介绍文字 -->
+    <view class="lab-introduction" style="position: absolute; left: 45rpx; top: 35rpx">
+      <text class="text-item title">深度学习实验室 - 深度学习机器视觉</text>
+    <text class="text-item author" style="position: relative; left: -314rpx; top: 37rpx">宋威龙</text>
+    <text class="text-item welcome" style="position: relative; left: -24rpx; top: 135rpx">\^O^/深度学习技术和机器视觉应用的研发中心欢迎来到深度学习实验室，一个专注于前沿深度学习技术和机器视觉应用的研究中心。我们的目标是通过创新的研究和开发，推动深度学习和机器视觉技术的进步，为解决现实世界中的复杂问题提供智能解决方案。我们致力于开发和优化深度学习算法，包括但不限于卷积神经网络（CNNs）、循环神经网络（RNNs）、生成对抗网络（GANs）等，以提高模型的准确性和效率。实验室专注于将深度学习技术应用于机器视觉领域，包括图像识别、物体检测、图像分割、人脸识别等，旨在实现高精度的视觉识别和分析。</text>
+</view>
+    <!-- 实验室硬件设备图片 -->
+    <image class="lab-equipment" src="/pages/projectdetails/images/1.jpg" mode="aspectFit"></image>
+</view>

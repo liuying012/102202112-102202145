@@ -1,0 +1,21 @@
+<!-- pages/self/self.wxml -->
+<view class="container" style="position: relative; left: 31rpx; top: 93rpx; height: 85rpx; display: block; box-sizing: content-box">
+  
+ <!-- 添加点击事件到gerenziliao.png图片 -->
+<image src="/pages/self/images/gerenziliao.png" mode="aspectFit" style="height: 147rpx; display: inline-block; box-sizing: border-box; position: relative; left: 375rpx; top: 243rpx; width: 193rpx" bindtap="goToGerenziliao"></image>
+
+  
+<!-- 添加点击事件到jinengshu.png图片 -->
+<image src="/pages/self/images/jinengshu.png" mode="aspectFit" style="height: 168rpx; display: inline-block; box-sizing: border-box; width: 218rpx; position: relative; left: 316rpx; top: 243rpx" bindtap="goToJinengshu"></image>
+ 
+  <image src="/pages/self/images/touxiang.png" mode="aspectFit" style="height: 168rpx; display: inline-block; box-sizing: border-box; position: relative; left: -457rpx; top: 37rpx; width: 258rpx"></image>
+  <text class="info-text" style="position: relative; left: -47rpx; top: -120rpx; height: 60rpx; display: block; box-sizing: border-box; width: 772rpx">宋威龙</text>
+  <!-- 添加点击事件到wodexiangmu.png图片 -->
+<image src="/pages/self/images/wodexiangmu.png" mode="aspectFit" style="height: 147rpx; display: inline-block; box-sizing: border-box; position: relative; left: 158rpx; top: rpx; width: 218rpx" bindtap="goToWodexiangmu"></image>
+
+  <!-- 添加点击事件到xiaoxizhongxin.png图片 -->
+<image src="/pages/self/images/xiaoxizhongxin.png" mode="aspectFit" style="height: 147rpx; display: inline-block; box-sizing: border-box; position: relative; left: -264rpx; top: 0rpx; width: 218rpx" bindtap="goToXiaoxi"></image>
+
+  <!-- 添加退出登录按钮 -->
+<button class="exit-btn" bindtap="onLogoutTap" style="position: relative; left: -32rpx; top: 624rpx; width: 687rpx; height: 100rpx; display: block; box-sizing: border-box">退出登录</button>
+</view>

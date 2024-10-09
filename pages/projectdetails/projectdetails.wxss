@@ -1,0 +1,69 @@
+.container {
+  position: relative;
+}
+
+.insert-image {
+  width: auto; /* 根据需要调整宽度 */
+  height: auto; /* 自适应高度 */
+  max-width: 100%; /* 限制最大宽度为100% */
+  display: block; /* 确保图片为块级元素 */
+  margin: 0 auto; /* 居中对齐 */
+}
+
+.image1 {
+  position: absolute;
+  top: 50px; /* 根据需要调整Y轴位置 */
+  left: 20px; /* 根据需要调整X轴位置 */
+  width: 200px; /* 调整宽度 */
+  height: auto; /* 自适应高度 */
+}
+
+/* pages/projectdetails/projectdetails.wxss */
+.container {
+  position: relative;
+}
+
+.insert-image {
+  width: 100%; /* 使背景图片占满整个容器宽度 */
+  height: auto; /* 自动调整高度以保持图片比例 */
+  display: block; /* 确保图片为块级元素 */
+}
+
+.lab-introduction {
+  position: absolute;
+  top: 20px; /* 根据需要调整Y轴位置 */
+  left: 20px; /* 根据需要调整X轴位置 */
+  color: black; /* 文字颜色，假设背景较暗 */
+}
+
+.lab-equipment {
+  position: absolute;
+  bottom: 20px; /* 根据需要调整Y轴位置 */
+  right: 20px; /* 根据需要调整X轴位置 */
+  width: 200px; /* 调整宽度 */
+  height: auto; /* 自动调整高度以保持图片比例 */
+}
+
+.container {
+  position: relative;
+  padding-left: 20rpx; /* 可以根据需要调整左边距 */
+}
+
+.text-item {
+  position: relative; /* 使用相对定位 */
+  left: 0; /* 所有文本从左边开始显示 */
+  margin-bottom: 20rpx; /* 添加下边距以分隔文本 */
+}
+
+.title {
+  top: -40rpx; /* 调整标题位置 */
+  font-weight: bold; /* 使标题加粗 */
+}
+
+.author {
+  top: 40rpx; /* 调整作者名称位置 */
+}
+
+.welcome {
+  top: 0; /* 欢迎文本的位置 */
+}
