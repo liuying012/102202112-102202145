@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/teams/teams",
+    "pages/team/index",
+    "pages/community/community",
+    "pages/community2/community2",
+    "pages/tutor/tutor",
+    "pages/discussion/discussion",
+    "pages/projectdetails/projectdetails",
+    "pages/self/self",
+    "pages/wodexiangmu/wodexiangmu",
+    "pages/xiaoxi/xiaoxi",
+    "pages/gerenziliao/gerenziliao",
+    "pages/fankui/fankui",
+    "pages/shezhi/shezhi",
+    "pages/jinengshu/jinengshu",
+    "pages/home/home"
+  ],
+  
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff", 
+    "navigationBarTextStyle": "black", 
+    "navigationBarTitleText": "你的应用名称"
+
+  },
+
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "社区"
+      },
+      {
+        "pagePath": "pages/team/index",
+        "text": "团队搭建"
+      },
+      {
+        "pagePath": "pages/self/self",
+        "text": "个人"
+      }
+    ],
+    "color": "#999",
+    "selectedColor": "#333",
+    "backgroundColor": "#fff",
+    "borderStyle": "black"
+  },
+
+  
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于小程序位置接口的效果展示"
+      }
+    }
+  
+  
+
+}
