@@ -71,7 +71,7 @@ COLAB 是一个跨专业协作平台，旨在帮助用户通过小程序发起�
 ### 2. 克隆代码
 
 ```bash
-git clone https://github.com/your-repository/colab-mini-program.git
+git clone https://github.com/liuying012/102202112-102202145
 ```
 
 ### 3. 项目配置
