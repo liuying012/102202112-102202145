@@ -1,28 +1,28 @@
-<view class="container">
+<view class="container" style="height: 558rpx; display: flex; box-sizing: border-box">
    <!-- 左侧列表 -->
-   <view class="left-column">
-     <view class="list-item" bindtap="chooseAvatar" style="position: relative; left: 116rpx; top: 41rpx">修改头像</view>
-     <view class="list-item" bindtap="editNickname" style="position: relative; left: 116rpx; top: 41rpx">修改昵称</view>
-     <view class="list-item" bindtap="editGender" style="width: 179rpx; display: block; box-sizing: border-box; position: relative; left: 116rpx; top: 41rpx">设置性别</view>
-     <view class="list-item" style="position: relative; left: 116rpx; top: 41rpx">电话号码</view>
-     <view class="list-item" style="position: relative; left: 116rpx; top: 41rpx">我的技能树</view>
+   <view class="left-column" style="width: 339rpx; height: 443rpx; display: block; box-sizing: border-box; position: relative; left: 41rpx; top: 49rpx">
+     <view class="list-item" bindtap="chooseAvatar" style="position: relative; left: 62rpx; top: 41rpx; width: 233rpx; height: 79rpx; display: block; box-sizing: border-box">修改头像</view>
+     <view class="list-item" bindtap="editNickname" style="position: relative; left: 60rpx; top: 41rpx; width: 233rpx; height: 75rpx; display: block; box-sizing: border-box">修改昵称</view>
+     <view class="list-item" bindtap="editGender" style="width: 233rpx; display: block; box-sizing: border-box; position: relative; left: 52rpx; top: 41rpx; height: 79rpx">设置性别</view>
+     <view class="list-item" style="position: relative; left: 52rpx; top: 41rpx; width: 233rpx; height: 77rpx; display: block; box-sizing: border-box">电话号码</view>
+     <view class="list-item" style="position: relative; left: 39rpx; top: 41rpx; width: 195rpx; height: 74rpx; display: block; box-sizing: border-box">我的技能树</view>
    </view>
    <!-- 右侧内容 -->
-   <view class="right-column" style="position: relative; left: -62rpx; top: 0rpx">
+   <view class="right-column" style="position: relative; left: -162rpx; top: 75rpx; width: 664rpx; height: 399rpx; display: block; box-sizing: border-box">
      <!-- 个人信息部分 -->
   <view class="info-section">
     <!-- 头像 -->
-    <image class="avatar" src="/images/touxiang.png" mode="aspectFit" style="width: 133rpx; height: 97rpx; display: inline-block; box-sizing: border-box; position: relative; left: 260rpx; top: 8rpx"></image>
+    <image class="avatar" src="/images/touxiang.png" mode="aspectFit" style="width: 83rpx; height: 150rpx; display: inline-block; box-sizing: border-box; position: relative; left: 272rpx; top: -45rpx"></image>
     <!-- 个人信息 -->
     <!-- 添加点击事件到jinengshu.png图片 -->
-<image src="/pages/gerenziliao/images/jinengshu.png" mode="aspectFit" style="height: 72rpx; display: inline-block; box-sizing: border-box; width: 133rpx; position: relative; left: 102rpx; top: 343rpx" bindtap="goTojinengshu"></image>
+<image src="/pages/gerenziliao/images/jinengshu.png" mode="aspectFit" style="height: 72rpx; display: inline-block; box-sizing: border-box; width: 133rpx; position: relative; left: 164rpx; top: 241rpx" bindtap="goTojinengshu"></image>
 
     <image class="avatar" src="/pages/gerenziliao/images/baocun.png" style="width: 654rpx; height: 97rpx; display: inline-block; box-sizing: border-box; position: relative; left: -135rpx; top: 1118rpx"></image>
    </view>
    <view class="personal-info">
-      <text style="width: 566rpx; display: inline; box-sizing: content-box; position: relative; left: 266rpx; top: -74rpx">宋威龙\n</text>
-      <text style="position: relative; left: 266rpx; top: -20rpx">男生\n</text>
-      <text style="position: relative; left: 266rpx; top: 20rpx">182****0894</text>
+      <text style="width: 566rpx; display: inline; box-sizing: content-box; position: relative; left: 266rpx; top: -162rpx">宋威龙\n</text>
+      <text style="position: relative; left: 281rpx; top: -122rpx">男生\n</text>
+      <text style="position: relative; left: 221rpx; top: -81rpx">182****0894</text>
     </view>
   </view>
 </view>

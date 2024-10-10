@@ -1,0 +1,73 @@
+<view class="container">
+  <!-- 应用名称 -->
+  <view class="share">SHARE</view>
+
+  <!-- 项目信息区域 -->
+  <view class="project-info">
+    <view class="project-label">项目</view>
+    <view class="sub-label">深度学习</view>
+
+    <view class="project-details">
+      <!-- 云服务器图片 -->
+      <image class="project-icon" src="https://xh-1330255155.cos.ap-guangzhou.myqcloud.com/3.jpg" style="width: 712rpx; display: inline-block; box-sizing: border-box"></image>
+      
+      <!-- 项目内容区域，添加方框 -->
+      <view class="project-info-box" style="border: 2rpx solid #000; padding: 20rpx; border-radius: 10rpx; margin-top: 20rpx; width: 712rpx; height: 406rpx; display: block; box-sizing: border-box">
+        <view class="project-name">项目导师：曾薰薰导师</view>
+        <view class="required-people">需要人数：10</view>
+        <view class="project-description">
+          项目介绍：采用线上点播或直播培训，线下考证的学习模式。学生可以了解项目详情，并向导师发送简历。
+        </view>
+        <view class="project-share">扫码和我一起学习吧</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 二维码和分享按钮 -->
+  <view class="share-container" style="height: 100rpx; display: block; box-sizing: border-box">
+    <!-- 插入二维码图片 -->
+    <image class="qr-code" src="https://xh-1330255155.cos.ap-guangzhou.myqcloud.com/4.jpg" style="width: 191rpx; height: 160rpx; display: inline-block; box-sizing: border-box; position: relative; left: 27rpx; top: -187rpx"></image>
+    
+    <!-- 分享按钮 -->
+    <button class="share-button" bindtap="showShareModal" style="position: relative; left: 0rpx; top: -168rpx">分享项目</button>
+  </view>
+
+  <!-- 分享弹窗 -->
+  <view class="share-modal" wx:if="{{showModal}}" style="position: fixed; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); display: flex; justify-content: center; align-items: center;">
+    <view class="modal-content" style="background-color: white; width: 80%; padding: 20rpx; border-radius: 10rpx;">
+      <view class="modal-title" style="text-align: center; font-size: 36rpx; margin-bottom: 20rpx;">选择分享方式</view>
+      
+      <!-- 并列的三个分享方式图标 -->
+      <view class="share-options" style="display: flex; justify-content: space-around;">
+        <view class="share-option">
+          <image src="https://xh-1330255155.cos.ap-guangzhou.myqcloud.com/colab.jpg" style="width: 80rpx; height: 80rpx;"></image>
+          <view class="share-text">COLAB</view>
+        </view>
+        <view class="share-option">
+          <image src="https://xh-1330255155.cos.ap-guangzhou.myqcloud.com/WeChat.jpg" style="width: 80rpx; height: 80rpx;"></image>
+          <view class="share-text">微信</view>
+        </view>
+        <view class="share-option">
+          <image src="https://xh-1330255155.cos.ap-guangzhou.myqcloud.com/QQ.jpg" style="width: 80rpx; height: 80rpx;"></image>
+          <view class="share-text">QQ</view>
+        </view>
+      </view>
+
+      <!-- 关闭按钮 -->
+      <button class="close-modal" bindtap="closeShareModal" style="margin-top: 20rpx; width: 100%; height: 80rpx; background-color: #f5f5f5; text-align: center;">关闭</button>
+    </view>
+  </view>
+
+  <!-- 用户信息区域 -->
+  <view class="user-info" style="display: flex; align-items: center; margin-top: 20rpx;">
+    <!-- 头像 -->
+    <image class="user-avatar" src="https://xh-1330255155.cos.ap-guangzhou.myqcloud.com/11.jpg" style="width: 100rpx; height: 100rpx; border-radius: 50%; margin-right: 20rpx;"></image>
+    <!-- 用户名 -->
+    <view class="username" style="font-size: 36rpx;">宋威龙</view>
+  </view>
+
+  <!-- 吴彦祖的评价框 -->
+  <view class="user-review" style="margin-top: 30rpx; padding: 20rpx; background-color: #f5f5f5; border-radius: 10rpx;">
+    <view class="review-text" style="font-size: 32rpx; color: #333;">这个项目非常具有实践价值，我非常期待能与更多优秀的同学一起合作完成！</view>
+  </view>
+</view>

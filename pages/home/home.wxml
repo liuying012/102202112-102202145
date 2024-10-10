@@ -5,9 +5,12 @@
   </view>
 
   <!-- 搜索框 -->
-  <view class="search-box">
-    <input class="search-input" placeholder="搜索项目" bindinput="onInput" />
-    <button class="search-btn" bindtap="onSearch" style="width: 166rpx; height: 97rpx; display: block; box-sizing: border-box; left: 5rpx; top: 0rpx">搜索</button>
+  <view class="search-box" style="width: 727rpx; display: flex; box-sizing: content-box">
+    <input style="width: 585rpx; display: block; box-sizing: border-box; height: 56rpx" class="search-input" placeholder="搜索项目" bindinput="onInput" />
+    <button class="search-btn" bindtap="onSearch" style="width: 114rpx; height: 56rpx; display: flex; align-items: center; justify-content: center; box-sizing: border-box; left: 12rpx; top: 4rpx; position: relative">
+  搜索
+</button>
+
   </view>
 
   <!-- 导航框 -->
@@ -19,12 +22,21 @@
   <view class="project-list">
     <block wx:for="{{projects}}" wx:key="index">
       <view class="project-item">
-        <image class="project-image" src="{{item.image}}" mode="aspectFill" />
+        <image class="project-image" src="{{item.image}}" mode="aspectFill" bindtap="onProjectClick" data-project="{{item}}" />
         <view class="project-info">
           <text class="project-title">{{item.title}}</text>
           <text class="project-description">{{item.description}}</text>
         </view>
       </view>
     </block>
+  </view>
+
+  <!-- 登录弹窗 -->
+  <view wx:if="{{showLoginModal}}" class="modal">
+    <view class="modal-content" style="height: 304rpx; display: block; box-sizing: border-box">
+      <text>请输入用户名</text>
+      <input style="height: 108rpx; display: block; box-sizing: border-box" type="text" placeholder="用户名" bindinput="onUserNameInput" />
+      <button class="modal-button" bindtap="login" style="position: relative; left: 0rpx; top: -20rpx">登录</button>
+    </view>
   </view>
 </view>

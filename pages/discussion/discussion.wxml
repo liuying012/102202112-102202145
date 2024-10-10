@@ -1,37 +1,28 @@
-<view class="chat-container" style="width: 712rpx; height: 410rpx; display: flex; box-sizing: content-box">
-    <!-- 标题区域 -->
-    <view class="title-area">
+<view class="chat-container">
+    <view class="title-area" style="position: relative; left: 0rpx; top: -20rpx">
         <view class="title-line">
-            <text class="title-text">张三</text>
+            <text class="title-text">{{receiver}}</text>
         </view>
         <view class="title-line">
             <text class="title-text">可持续发展项目导师</text>
         </view>
     </view>
 
-    <!-- 对话内容区域 -->
-    <view class="chat-content" style="width: 712rpx; display: flex; box-sizing: border-box; height: 327rpx; position: relative; left: 0rpx; top: 0rpx">
-        <!-- 张三的对话 -->
-        <view class="message message-sender">
-            <image class="avatar" src="/pages/discussion/images/touxiang1.jpg"></image>
-            <text style="position: relative; left: 2rpx; top: -19rpx">你好，宋威龙</text>
-        </view>
-        <!-- 用户的回复 -->
-        <view class="message message-receiver">
-            <text style="position: relative; left: 508rpx; top: 19rpx">你好</text>
-            <image class="avatar" src="/pages/discussion/images/touxiang2.jpg" style="position: relative; left: 535rpx; top: 0rpx"></image>
-        </view>
-        <!-- 张三的另一条消息 -->
-        <view class="message message-sender">
-            <image class="avatar" src="/pages/discussion/images/touxiang1.jpg"></image>
-            <text style="position: relative; left: -6rpx; top: -19rpx">关于我们的项目，你有兴趣参加吗？</text>
-        </view>
+    <view class="chat-content" style="height: 0rpx; display: block; box-sizing: border-box">
+        <block wx:for="{{messages}}" wx:key="index">
+            <view class="message left" wx:if="{{item.sender !== username}}">
+                <image class="avatar" src="/pages/discussion/images/touxiang2.jpg"></image>
+                <text class="message-text-left">{{item.text}}</text>
+            </view>
+            <view class="message right" wx:if="{{item.sender === username}}">
+                <text class="message-text-right">{{item.text}}</text>
+                <image class="avatar" src="/pages/discussion/images/touxiang1.jpg"></image>
+            </view>
+        </block>
     </view>
 
-    
-     <!-- 输入框和发送按钮区域 -->
-     <view class="input-area" style="display: flex; align-items: center; padding: 10rpx; position: relative; left: 20rpx; top: 27rpx">
-        <input style="position: relative; left: -10rpx; top: 791rpx" class="input-field" placeholder="输入消息..." bindinput="handleInput" value="{{message}}" />
-        <button class="send-btn" bindtap="sendMessage" style="position: relative; left: -29rpx; top: 791rpx">发送</button>
+    <view class="input-area" style="width: 712rpx; height: 81rpx; display: flex; box-sizing: border-box; left: 20rpx; top: 1304rpx; position: fixed">
+        <input class="input-field" placeholder="输入消息..." bindinput="handleInput" value="{{message}}" />
+        <button class="send-btn" bindtap="sendMessage">发送</button>
     </view>
 </view>

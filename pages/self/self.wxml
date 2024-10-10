@@ -7,9 +7,12 @@
   
 <!-- 添加点击事件到jinengshu.png图片 -->
 <image src="/pages/self/images/jinengshu.png" mode="aspectFit" style="height: 168rpx; display: inline-block; box-sizing: border-box; width: 218rpx; position: relative; left: 316rpx; top: 243rpx" bindtap="goToJinengshu"></image>
- 
-  <image src="/pages/self/images/touxiang.png" mode="aspectFit" style="height: 168rpx; display: inline-block; box-sizing: border-box; position: relative; left: -457rpx; top: 37rpx; width: 258rpx"></image>
-  <text class="info-text" style="position: relative; left: -47rpx; top: -120rpx; height: 60rpx; display: block; box-sizing: border-box; width: 772rpx">宋威龙</text>
+
+  <image src="/pages/self/images/touxiang.png" mode="aspectFit" style="height: 168rpx; display: inline-block; box-sizing: border-box; position: relative; left: -457rpx; top: 37rpx; width: 258rpx"bindtap="chooseAvatar"></image>
+  <text class="info-text" style="position: relative; left: -47rpx; top: -192rpx; height: 60rpx; display: block; box-sizing: border-box; width: 772rpx">
+  {{username}} <!-- 绑定页面数据中的 username -->
+</text>
+
   <!-- 添加点击事件到wodexiangmu.png图片 -->
 <image src="/pages/self/images/wodexiangmu.png" mode="aspectFit" style="height: 147rpx; display: inline-block; box-sizing: border-box; position: relative; left: 158rpx; top: rpx; width: 218rpx" bindtap="goToWodexiangmu"></image>
 

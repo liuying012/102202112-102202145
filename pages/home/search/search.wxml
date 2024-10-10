@@ -1,0 +1,39 @@
+<view class="search-page">
+  <!-- 搜索框 -->
+  <view class="search-box">
+    <input class="search-input" placeholder="搜索项目" value="{{searchValue}}" bindinput="onInput" />
+    <button class="search-btn" bindtap="onSearch" style="position: relative; left: 0rpx; top: 1rpx; width: 100rpx; height: 64rpx; display: flex; align-items: center; justify-content: center; box-sizing: border-box;">
+  搜索
+</button>
+
+  </view>
+
+  <!-- 历史搜索 -->
+  <view class="history-wrap">
+    <view class="search-header">
+      <text class="search-title">历史搜索</text>
+      <text class="search-clear" bindtap="clearHistory">清除</text>
+    </view>
+    <view class="search-content">
+      <block wx:for="{{historyWords}}" wx:key="index">
+        <view class="search-item" bindtap="onHistoryTap" data-word="{{item}}">
+          {{item}}
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <!-- 热门搜索 -->
+  <view class="popular-wrap">
+    <view class="search-header">
+      <text class="search-title">热门搜索</text>
+    </view>
+    <view class="search-content">
+      <block wx:for="{{popularWords}}" wx:key="index">
+        <view class="search-item" bindtap="onPopularTap" data-word="{{item}}">
+          {{item}}
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

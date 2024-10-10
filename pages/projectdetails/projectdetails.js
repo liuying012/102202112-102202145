@@ -1,8 +1,15 @@
 Page({
   data: {
-    // 可以添加数据绑定
+    title: "",
+    description: "",
+    image: ""
   },
-  onLoad: function () {
-    // 页面加载时的逻辑
+
+  onLoad: function (options) {
+    this.setData({
+      title: options.title,
+      description: options.description,
+      image: options.image
+    });
   }
 });
